@@ -1,0 +1,41 @@
+<div id="main">
+<form method="get" action="[URL]" class="form-horizontal">
+<input type="hidden" name="mode" value="config">
+<input type="hidden" name="action" value="editOauth">
+<fieldset>
+<legend><div>OAuth情報確認</div></legend>
+[MESSAGE]
+<div class="control-group">
+<label class="control-label">CONSUMER_KEY</label>
+<div class="controls">
+[consumer_key]
+</div>
+</div>
+
+<div class="control-group">
+<label class="control-label">CONSUMER_SECRET</label>
+<div class="controls">
+[consumer_secret]
+</div>
+</div>
+
+<div class="control-group">
+<label class="control-label">ACCESS_TOKEN</label>
+<div class="controls">
+[access_token]
+</div>
+</div>
+
+<div class="control-group">
+<label class="control-label">ACCESS_TOKEN_SECRET</label>
+<div class="controls">
+[access_token_secret]
+</div>
+</div>
+
+<div class="form-actions">
+<button type="submit" class="btn submit"><i class="icon-upload"></i> 変更</button>
+</div>
+</fieldset>
+</form>
+</div>

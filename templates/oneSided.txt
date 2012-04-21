@@ -1,0 +1,23 @@
+<div id="main">
+<form method="post" action="" class="form-horizontal">
+<fieldset>
+<legend><div>フォロー返しの例外</div></legend>
+[MESSAGE]
+<div class="control-group">
+<label class="control-label">例外ユーザー</label>
+<div class="controls">
+<textarea name="oneSided" class="textarea span7">[oneSided]</textarea>
+<p class="help-block">
+自動フォロー返しの設定が「ON」になっていても、ここに入力されているユーザーに対してはフォロー返しが行われません。<br>
+ユーザー名(「@okumin」の「okumin」の部分)を入力してください。<br>
+改行で区切ることで、複数のユーザーを登録できます。
+</p>
+</div>
+</div>
+
+<div class="form-actions">
+<button type="submit" class="btn submit"><i class="icon-upload"></i> 送信</button>
+</div>
+</fieldset>
+</form>
+</div>

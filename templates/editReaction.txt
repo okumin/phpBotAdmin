@@ -1,0 +1,91 @@
+<div id="main">
+<form method="post" action="" class="form-horizontal">
+<fieldset>
+<legend><div>[head]</div></legend>
+[MESSAGE]
+<div class="control-group">
+<label class="control-label">グループ名</label>
+<div class="controls">
+<input type="text" name="groupName" value="[groupName]">
+<p class="help-block">
+ここに入力した名称が、[head]一覧に表示されます。
+</p>
+</div>
+</div>
+
+<div class="control-group">
+<label class="control-label">動作状況</label>
+<div class="controls">
+[groupRun]
+<p class="help-block">
+「OFF」にすると、このグループに記録された動作は実行されません。
+</p>
+</div>
+</div>
+
+<div class="control-group">
+<label class="control-label">有効期限</label>
+<div class="controls">
+<input type="text" name="groupLimit" value="[groupLimit]">
+<p class="help-block">
+命令を実行する期限(年月日時分)を数字12桁で入力してください。<br>
+例: 2020年12月1日8時15分まで実行する場合 => 202012010815<br>
+期限を過ぎたグループは自動的に消去されます。<br>
+永遠に実行したい場合は空欄にしてください。
+</p>
+</div>
+</div>
+
+<div class="control-group">
+<label class="control-label">パターン<div class="label-parent"><span class="label label-important">必須</span></div></label>
+<div class="controls">
+<input type="text" name="pattern" value="[pattern]">
+<p class="help-block">
+上記のパターンを本文に含むツイートに反応します。<br>
+正規表現で記入することができます。<br>
+正規表現のデリミタには「/」を使用しています。<br>
+記入例:<span style="color:red;">おはよう</span>⇒本文に「おはよう」という文字列を含むつぶやきに反応します。
+</p>
+</div>
+</div>
+
+<div class="control-group">
+<label class="control-label">RT</label>
+<div class="controls">
+[retweet]
+<p class="help-block">
+チェックを入れるとパターンにマッチしたツイートをリツイートします。
+</p>
+</div>
+</div>
+
+<div class="control-group">
+<label class="control-label">お気に入り登録</label>
+<div class="controls">
+[favorite]
+<p class="help-block">
+チェックを入れるとパターンにマッチしたツイートをお気に入り登録します。
+</p>
+</div>
+</div>
+
+<div class="control-group">
+<label class="control-label">コメント</label>
+<div class="controls">
+<textarea name="comments" class="textarea span7">[comments]</textarea>
+<p class="help-block">
+改行で区切ることで、複数のコメントを登録することができます。<br>
+コメントが複数登録されている場合、それらのコメントの中からランダムに一つをつぶやきます。<br>
+[NAME]を記入すると対象のツイートの投稿者名に、[SCREEN_NAME]を記入するとユーザー名(@〜)に置き換えられます。<br>
+「[SCREEN_NAME] おはよう、[NAME]。」と入力すると、「[@okumin おはよう、おくみん。」といった感じに変換されます。
+</p>
+</div>
+</div>
+
+<div class="form-actions">
+<button type="submit" class="btn submit"><i class="icon-upload"></i> 送信</button>
+<button type="submit" name="remove" value="1" class="btn submit"[disabled]><i class="icon-remove"></i> 削除</button>
+</div>
+</fieldset>
+</form>
+</div>

@@ -1,0 +1,25 @@
+<div id="main">
+<form method="post" action="" class="form-horizontal">
+<fieldset>
+<legend><div>API実行可能回数確認</div></legend>
+[MESSAGE]
+<div class="control-group">
+<label class="control-label">残り実行可能回数</label>
+<div class="controls">
+<div class="value">
+[remaining]
+</div>
+</div>
+</div>
+
+<div class="control-group">
+<label class="control-label">次回リセット時刻</label>
+<div class="controls">
+<div class="value">
+[time]
+</div>
+</div>
+</div>
+</fieldset>
+</form>
+</div>

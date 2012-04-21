@@ -1,0 +1,22 @@
+<div id="main">
+<form method="post" action="" class="form-horizontal">
+<fieldset>
+<legend><div>フォロー解除</div></legend>
+[MESSAGE]
+<div class="control-group">
+<label class="control-label">片思いユーザー</span></label>
+<div class="controls">
+[unfollow]
+<p class="help-block">
+あなたが片思いフォローしているユーザー一覧です。<br>
+フォローを外したいユーザーにチェックを入れ、「送信」ボタンを押すことでアンフォローを行います。
+</p>
+</div>
+</div>
+
+<div class="form-actions">
+<button type="submit" class="btn submit"><i class="icon-upload"></i> 送信</button>
+</div>
+</fieldset>
+</form>
+</div>

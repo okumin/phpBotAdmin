@@ -1,0 +1,34 @@
+<div id="main">
+<form method="post" action="" class="form-horizontal">
+<fieldset>
+<legend><div>基本設定</div></legend>
+[MESSAGE]
+<div class="control-group">
+<label class="control-label">自動フォロー返し</label>
+<div class="controls">
+[autoFollow]
+<p class="help-block">
+「ON」にすると、自動でフォロー返しが行われます。
+</p>
+</div>
+</div>
+
+<div class="control-group">
+<label class="control-label">140字を超えるつぶやきの処理</label>
+<div class="controls">
+[cut]
+<p class="help-block">
+投稿するツイートの本文が140字を超えていた場合の処理を設定します。<br>
+「ON」にすると、超過分を切り取って投稿します。<br>
+なお、140文字目がユーザー名(@〜〜)やハッシュタグ、URLの一部であった場合、自動的に適切な位置で区切ります。<br>
+「OFF」にすると、140字を超えているつぶやきは投稿されません。
+</p>
+</div>
+</div>
+
+<div class="form-actions">
+<button type="submit" class="btn submit"><i class="icon-upload"></i> 送信</button>
+</div>
+</fieldset>
+</form>
+</div>

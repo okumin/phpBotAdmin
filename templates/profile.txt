@@ -1,0 +1,97 @@
+<div id="main">
+<form method="post" action="" class="form-horizontal">
+<fieldset>
+<legend><div>プロフィール</div></legend>
+[MESSAGE]
+<div class="control-group">
+<label class="control-label">ID</label>
+<div class="controls">
+<div class="value">
+[id]
+</div>
+</div>
+</div>
+
+<div class="control-group">
+<label class="control-label">名前</label>
+<div class="controls">
+<div class="value">
+[name]
+</div>
+</div>
+</div>
+
+<div class="control-group">
+<label class="control-label">ユーザー名</label>
+<div class="controls">
+<div class="value">
+@[screen_name]
+</div>
+</div>
+</div>
+
+<div class="control-group">
+<label class="control-label">URL</label>
+<div class="controls">
+<div class="value">
+[profile_url]
+</div>
+</div>
+</div>
+
+<div class="control-group">
+<label class="control-label">自己紹介</label>
+<div class="controls">
+<div class="value">
+[description]
+</div>
+</div>
+</div>
+
+<div class="control-group">
+<label class="control-label">ツイート数</label>
+<div class="controls">
+<div class="value">
+[statuses_count]
+</div>
+</div>
+</div>
+
+<div class="control-group">
+<label class="control-label">フォロー数</label>
+<div class="controls">
+<div class="value">
+[friends_count]
+</div>
+</div>
+</div>
+
+<div class="control-group">
+<label class="control-label">フォロワー数</label>
+<div class="controls">
+<div class="value">
+[followers_count]
+</div>
+</div>
+</div>
+
+<div class="control-group">
+<label class="control-label">お気に入り数</label>
+<div class="controls">
+<div class="value">
+[favorites_count]
+</div>
+</div>
+</div>
+
+<div class="control-group">
+<label class="control-label">被リスト数</label>
+<div class="controls">
+<div class="value">
+[listed_count]
+</div>
+</div>
+</div>
+</fieldset>
+</form>
+</div>

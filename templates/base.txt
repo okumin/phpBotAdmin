@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<title>[TITLE]</title>
+<link href="[URL]?mode=bootstrap&amp;action=css&amp;filename=bootstrap.min" rel="stylesheet">
+<style type="text/css">
+<!--
+ul{
+	margin:0;
+}
+table.table{
+	border-color:#999999;
+}
+table.home th{
+	background-color:#cccccc;
+}
+body{
+	padding-top:55px;
+}
+div#contents{
+	margin:-5px auto 0 auto;
+	border:1px solid #777777;
+	-webkit-border-radius:3px;
+	-moz-border-radius:3px;border-radius:3px;
+	-webkit-box-shadow:inset 0 1px 0 #ffffff;
+	-moz-box-shadow:inset 0 1px 0 #ffffff;
+	box-shadow:inset 0 1px 0 #ffffff;
+}
+div#main .home{
+	margin:20px auto;
+	width:900px;
+}
+div#main .home th{
+	width:300px;
+}
+div#main form{
+	padding:5px;
+	background-color:#ffffff;
+	margin-bottom:0;
+}
+div#main legend{
+	margin-bottom:0;
+	border-bottom:1px #666666 solid;
+}
+div#main legend div{
+	width:200px;
+	text-align:right;
+}
+div#main .control-label{
+	border-right:1px #555555 solid;
+	font-size:120%;
+	width:200px;
+	padding:0 20px 0 0;
+}
+div#main .control-label .label-parent{
+	margin-top:3px;
+}
+div#main .controls{
+	margin-left:220px;
+	border-left:1px #555555 solid;
+	padding:0 5px 0 15px;
+}
+div#main .message{
+	margin:10px 0 10px 236px;
+	width:50%;
+}
+div#main p.help-block{
+	color:#444444;
+}
+div#main .form-horizontal .form-actions{
+	border-top:1px #666666 solid;
+	background-color:#dddddd;
+	margin-bottom:0;
+	padding-left:235px;
+}
+div#main div.on{
+	color:#339933;
+	font-size:120%;
+	cursor:pointer;
+}
+div#main div.off{
+	color:#ff3333;
+	font-size:120%;
+	cursor:pointer;
+}
+div#main div.all{
+	margin-bottom:3px;
+}
+div#main textarea.textarea{
+	height:200px;
+}
+div#main .list{
+	margin:20px 100px;
+	font-size:120%;
+}
+div#main a.create{
+	font-size:110%;
+	margin:5px 0;
+}
+div#main .value{
+	font-size:120%;
+	font-weight:bold;
+	color:#333333;
+}
+div#footer{
+	padding-top:5px;
+	text-align:right;
+}
+-->
+</style>
+<script type="text/javaScript">
+<!--
+function init(){
+	if(min = document.getElementById('min')){
+		min.insertBefore(document.createElement('br'), min.childNodes[40]);
+		min.insertBefore(document.createElement('br'), min.childNodes[20]);
+	}
+	if(hour = document.getElementById('hour')){
+		hour.insertBefore(document.createElement('br'), hour.childNodes[12]);
+	}
+	if(day = document.getElementById('day')){
+		day.insertBefore(document.createElement('br'), day.childNodes[16]);
+	}
+	if(week = document.getElementById('week')){
+		days = new Array('日', '月', '火', '水', '木', '金', '土');
+		for(i = 0; i < 7; i++){
+			week.childNodes[i].lastChild.nodeValue = days[i];
+		}
+	}
+}
+OpenExtLink = function(el){
+	var url = el.href;
+	w = window.open();
+	w.document.write('<meta http-equiv="refresh" content="0;url='+url+'">');
+	w.document.close();
+	return false;
+};
+function changeChecked(obj){
+	if(obj.className == "checkbox on"){
+		obj.className = obj.className.replace(/on/g, 'off');
+		obj.firstChild.checked = false;
+		obj.lastChild.nodeValue = ' OFF';
+	}else{
+		obj.className = obj.className.replace(/off/g, 'on');
+		obj.firstChild.checked = true;
+		obj.lastChild.nodeValue = ' ON';
+	}
+}
+function changeActive(obj){
+	if(obj.className == 'btn btn-mini btn-primary'){
+		obj.className = obj.className.replace(/ btn-primary/g, '');
+		obj.firstChild.attributes.getNamedItem('value').nodeValue = '';
+	}else{
+		obj.className = obj.className + " btn-primary";
+		obj.firstChild.attributes.getNamedItem('value').nodeValue = '1';
+	}
+}
+function changeAllActive(obj, target){
+	childs = target.childNodes;
+	num = childs.length;
+	if(obj.className == 'btn btn-mini btn-primary'){
+		obj.className = obj.className.replace(/ btn-primary/g, '');
+		obj.firstChild.nodeValue = '全てチェック状態にする';
+		for(i = 0; i < num; i++){
+			if(childs[i].tagName == "BUTTON"){
+				childs[i].className = childs[i].className.replace(/ btn-primary/g, '');
+				childs[i].firstChild.attributes.getNamedItem('value').nodeValue = '';
+			}
+		}
+	}else{
+		obj.className = obj.className + " btn-primary";
+		obj.firstChild.nodeValue = '全てのチェックを外す　';
+		for(i = 0; i < num; i++){
+			if(childs[i].tagName == "BUTTON"){
+				childs[i].className = childs[i].className + " btn-primary";
+				childs[i].firstChild.attributes.getNamedItem('value').nodeValue = '1';
+			}
+		}
+	}
+}
+-->
+</script>
+</head>
+<body onLoad="init()">
+<div id="container" class="container">
+<div id="header">
+	<div class="navbar navbar-fixed-top">
+	<div class="navbar-inner">
+	<div class="container">
+	<a class="brand" href="[URL]">[TITLE]</a>
+	<ul class="nav">
+	<li><a href="[URL]"><i class="icon-home icon-white"></i> HOME</a></li>
+	<li><ul class="nav pull-right">
+		<li class="dropdown">
+		<a href="#" class="dropdown-toggle" data-toggle="dropdown">
+		<i class="icon-edit icon-white"></i> 自動ツイート
+		<span class="caret"></span>
+		</a>
+		<ul class="dropdown-menu">
+		<li><a href="[URL]?mode=autoTweet&amp;action=select">定時ツイート[TWEET_COUNT]</a></li>
+		<li><a href="[URL]?mode=reactHome&amp;action=select">home_timelineに反応[HOME_COUNT]</a></li>
+		<li><a href="[URL]?mode=reactMention&amp;action=select">mentionに反応[MENTION_COUNT]</a></li>
+		</ul>
+		</li>
+	</ul></li>
+	<li><ul class="nav pull-right">
+		<li class="dropdown">
+		<a href="#" class="dropdown-toggle" data-toggle="dropdown">
+		<i class="icon-cog icon-white"></i> 設定
+		<span class="caret"></span>
+		</a>
+		<ul class="dropdown-menu">
+		<li><a href="[URL]?mode=config&amp;action=base">基本設定</a></li>
+		<li><a href="[URL]?mode=config&amp;action=oauth">OAuth情報設定</a></li>
+		<li><a href="[URL]?mode=config&amp;action=userInfo">ユーザー情報設定</a></li>
+		<li><a href="[URL]?mode=config&amp;action=oneSided">フォロー返しの例外設定</a></li>
+		</ul>
+		</li>
+	</ul></li>
+	<li><ul class="nav pull-right">
+		<li class="dropdown">
+		<a href="#" class="dropdown-toggle" data-toggle="dropdown">
+		<i class="icon-th icon-white"></i> その他
+		<span class="caret"></span>
+		</a>
+		<ul class="dropdown-menu">
+		<li><a href="[URL]?mode=api&amp;action=limit">API実行可能回数確認</a></li>
+		<li><a href="[URL]?mode=api&amp;action=profile">プロフィール確認</a></li>
+		<li><a href="[URL]?mode=api&amp;action=unfollow">フォロー解除</a></li>
+		<li><a href="[URL]?mode=execBot">命令実行</a></li>
+		</ul>
+		</li>
+	</ul></li>
+	</ul>
+	<ul class="nav pull-right">
+		<li><a href="[URL]?mode=login&amp;action=logout"><i class="icon-off icon-white"></i> ログアウト</a></li>
+	</ul>
+	</div>
+	</div>
+</div>
+</div>
+
+<ul class="breadcrumb">
+[BREADCRUMB]</ul>
+
+<div id="contents" class="row">
+[CONTENT]
+</div>
+<div id="footer">
+Produced by <a onClick="return OpenExtLink(this)" href="http://okumin.com/" target="_blank">okumin.com</a>
+</div>
+</div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+<script src="[URL]?mode=bootstrap&amp;action=js&amp;filename=bootstrap.min"></script>
+</body>
+</html>

@@ -1,0 +1,33 @@
+<div id="main">
+<form method="post" action="" class="form-horizontal">
+<fieldset>
+<legend><div>ユーザー情報設定</div></legend>
+[MESSAGE]
+<div class="control-group">
+<label class="control-label">ユーザー名<div class="label-parent"><span class="label label-important">半角英数字4〜12文字</span></div></label>
+<div class="controls">
+<input type="text" name="user" value="[user]" class="input-xlarge">
+<p class="help-block">
+[TITLE]へログインするためのユーザー名を登録します。<br>
+Twitterのアカウント名と同一である必要はありません。
+</p>
+</div>
+</div>
+
+<div class="control-group">
+<label class="control-label">パスワード<div class="label-parent"><span class="label label-important">半角英数字4〜12文字</span></div></label>
+<div class="controls">
+<input type="password" name="pass" value="[pass]" class="input-xlarge">
+<p class="help-block">
+[TITLE]へログインするためのパスワードを登録します。<br>
+Twitterのパスワードと同一である必要はありません。
+</p>
+</div>
+</div>
+
+<div class="form-actions">
+<button type="submit" class="btn submit"><i class="icon-upload"></i> 送信</button>
+</div>
+</fieldset>
+</form>
+</div>

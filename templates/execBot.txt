@@ -1,0 +1,21 @@
+<div id="main">
+<form method="get" action="[URL]" class="form-horizontal">
+<fieldset>
+<input type="hidden" name="mode" value="execBot">
+<input type="hidden" name="action" value="exec">
+<legend><div>命令実行</div></legend>
+<div class="control-group">
+<div class="controls">
+<p class="help-block">
+登録した動作を強制的に実行します。<br>
+なお、プログラムをcronから実行する場合とこのページから実行する場合では、実行ユーザー及び実行時刻が異なる場合があります。<br>
+そのため、このページからbotを動作させることができたとしても、cronから動作させることができるとは限りません。
+</p>
+</div>
+</div>
+<div class="form-actions">
+<button type="submit" class="btn submit"><i class="icon-ok"></i> 実行</button>
+</div>
+</fieldset>
+</form>
+</div>

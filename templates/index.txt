@@ -1,0 +1,33 @@
+<div id="main">
+<table class="home table table-bordered">
+<thead>
+<tr>
+<th>自動ツイート設定</th>
+<th>設定</th>
+<th>その他</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="[URL]?mode=autoTweet&amp;action=select">定時ツイート[tweetCount]</a></td>
+<td><a href="[URL]?mode=config&amp;action=base">基本設定</a></td>
+<td><a href="[URL]?mode=api&amp;action=limit">API実行可能回数確認</a></td>
+</tr>
+<tr>
+<td><a href="[URL]?mode=reactHome&amp;action=select">timeline反応[homeCount]</a></td>
+<td><a href="[URL]?mode=config&amp;action=userInfo">ユーザー情報設定</a></td>
+<td><a href="[URL]?mode=api&amp;action=profile">プロフィール確認</a></td>
+</tr>
+<tr>
+<td><a href="[URL]?mode=reactMention&amp;action=select">mention反応[mentionCount]</a></td>
+<td><a href="[URL]?mode=config&amp;action=oauth">OAuth情報設定</a></td>
+<td><a href="[URL]?mode=api&amp;action=unfollow">フォロー解除</a></td>
+</tr>
+<tr>
+<td></td>
+<td><a href="[URL]?mode=config&amp;action=oneSided">フォロー返しの例外設定</a></td>
+<td><a href="[URL]?mode=execBot">命令実行</a></td>
+</tr>
+</tbody>
+</table>
+</div>

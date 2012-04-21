@@ -1,0 +1,121 @@
+<div id="main">
+<form method="post" action="" class="form-horizontal">
+<fieldset>
+<legend><div>定時ツイート</div></legend>
+[MESSAGE]
+<div class="control-group">
+<label class="control-label">グループ名</label>
+<div class="controls">
+<input type="text" name="groupName" value="[groupName]">
+<p class="help-block">
+ここに入力した名称が定時ツイート一覧に表示されます。
+</p>
+</div>
+</div>
+
+<div class="control-group">
+<label class="control-label">動作状況</label>
+<div class="controls">
+[groupRun]
+<p class="help-block">
+「OFF」にすると、このグループに記録された動作は実行されません。
+</p>
+</div>
+</div>
+
+<div class="control-group">
+<label class="control-label">有効期限</label>
+<div class="controls">
+<input type="text" name="groupLimit" value="[groupLimit]">
+<p class="help-block">
+命令を実行する期限(年月日時分)を数字12桁で入力してください。<br>
+例: 2020年12月1日8時15分まで実行する場合 => 202012010815<br>
+期限を過ぎたグループは自動的に消去されます。<br>
+永遠に実行したい場合は空欄にしてください。
+</p>
+</div>
+</div>
+
+<div class="control-group">
+<label class="control-label">実行時刻(分)<div class="label-parent"><span class="label label-important">必須</span></div></label>
+<div class="controls">
+<div class="all"><button type="button" class="btn btn-mini" onClick="changeAllActive(this, document.getElementById('min'));">全てチェック状態にする</button></div>
+<div id="min">[min]</div>
+<p class="help-block">
+投稿したい時刻(分)を指定してください。<br>
+※上記の時間帯にチェックを入れるだけでは、botは作動しません。<br>
+必ずお使いのサーバ環境にてcronの設定を行なってください。
+</p>
+</div>
+</div>
+
+<div class="control-group">
+<label class="control-label">実行時刻(時)<div class="label-parent"><span class="label label-important">必須</span></div></label>
+<div class="controls">
+<div class="all"><button type="button" class="btn btn-mini" onClick="changeAllActive(this, document.getElementById('hour'));">全てチェック状態にする</button></div>
+<div id="hour">[hour]</div>
+<p class="help-block">
+投稿したい時刻(時)を指定してください。<br>
+※上記の時間帯にチェックを入れるだけでは、botは作動しません。<br>
+必ずお使いのサーバ環境にてcronの設定を行なってください。
+</p>
+</div>
+</div>
+
+<div class="control-group">
+<label class="control-label">実行時刻(日)<div class="label-parent"><span class="label label-important">必須</span></div></label>
+<div class="controls">
+<div class="all"><button type="button" class="btn btn-mini" onClick="changeAllActive(this, document.getElementById('day'));">全てチェック状態にする</button></div>
+<div id="day">[day]</div>
+<p class="help-block">
+投稿したい時刻(日)を指定してください。<br>
+※上記の時間帯にチェックを入れるだけでは、botは作動しません。<br>
+必ずお使いのサーバ環境にてcronの設定を行なってください。
+</p>
+</div>
+</div>
+
+<div class="control-group">
+<label class="control-label">実行時刻(月)<div class="label-parent"><span class="label label-important">必須</span></div></label>
+<div class="controls">
+<div class="all"><button type="button" class="btn btn-mini" onClick="changeAllActive(this, document.getElementById('month'));">全てチェック状態にする</button></div>
+<div id="month">[month]</div>
+<p class="help-block">
+投稿したい時刻(月)を指定してください。<br>
+※上記の時間帯にチェックを入れるだけでは、botは作動しません。<br>
+必ずお使いのサーバ環境にてcronの設定を行なってください。
+</p>
+</div>
+</div>
+
+<div class="control-group">
+<label class="control-label">実行時刻(曜日)<div class="label-parent"><span class="label label-important">必須</span></div></label>
+<div class="controls">
+<div class="all"><button type="button" class="btn btn-mini" onClick="changeAllActive(this, document.getElementById('week'));">全てチェック状態にする</button></div>
+<div id="week">[week]</div>
+<p class="help-block">
+投稿したい時刻(曜日)を指定してください。<br>
+※上記の時間帯にチェックを入れるだけでは、botは作動しません。<br>
+必ずお使いのサーバ環境にてcronの設定を行なってください。
+</p>
+</div>
+</div>
+
+<div class="control-group">
+<label class="control-label">コメント<div class="label-parent"><span class="label label-important">必須</span></div></label>
+<div class="controls">
+<textarea name="comments" class="textarea span7">[comments]</textarea>
+<p class="help-block">
+改行で区切ることで、複数のコメントを登録することができます。<br>
+コメントが複数登録されている場合、それらのコメントの中からランダムに一つをつぶやきます。<br>
+</p>
+</div>
+</div>
+
+<div class="form-actions">
+<button type="submit" class="btn submit"><i class="icon-upload"></i> 送信</button>
+<button type="submit" name="remove" value="1" class="btn submit"[disabled]><i class="icon-remove"></i> 削除</button>
+</div>
+</fieldset>
+</form>
+</div>

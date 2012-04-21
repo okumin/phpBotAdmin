@@ -1,0 +1,51 @@
+<div id="main">
+<form method="post" action="" class="form-horizontal">
+<fieldset>
+<legend><div>OAuth情報設定</div></legend>
+[MESSAGE]
+<div class="control-group">
+<label class="control-label">CONSUMER_KEY</label>
+<div class="controls">
+<input type="text" name="consumer_key" value="[consumer_key]" class="input-xlarge">
+<p class="help-block">
+botの動作に使用するアプリケーションのCONSUMER_KEYを入力してください。
+</p>
+</div>
+</div>
+
+<div class="control-group">
+<label class="control-label">CONSUMER_SECRET</label>
+<div class="controls">
+<input type="text" name="consumer_secret" value="[consumer_secret]" class="input-xlarge">
+<p class="help-block">
+botの動作に使用するアプリケーションのCONSUMER_SECRETを入力してください。
+</p>
+</div>
+</div>
+
+<div class="control-group">
+<label class="control-label">ACCESS_TOKEN</label>
+<div class="controls">
+<input type="text" name="access_token" value="[access_token]" class="input-xlarge">
+<p class="help-block">
+botの動作に使用するアプリケーションのACCESS_TOKENを入力してください。
+</p>
+</div>
+</div>
+
+<div class="control-group">
+<label class="control-label">ACCESS_TOKEN_SECRET</label>
+<div class="controls">
+<input type="text" name="access_token_secret" value="[access_token_secret]" class="input-xlarge">
+<p class="help-block">
+botの動作に使用するアプリケーションのACCESS_TOKEN_SECRETを入力してください。
+</p>
+</div>
+</div>
+
+<div class="form-actions">
+<button type="submit" class="btn submit"><i class="icon-upload"></i> 送信</button>
+</div>
+</fieldset>
+</form>
+</div>

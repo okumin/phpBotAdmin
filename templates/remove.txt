@@ -1,0 +1,20 @@
+<div id="main">
+<form method="post" action="" class="form-horizontal">
+<fieldset>
+<input type="hidden" name="check" value="1">
+<legend><div>データ削除</div></legend>
+[MESSAGE]
+<div class="control-group">
+<div class="controls">
+<p class="help-block">
+[groupName]を削除します。<br>
+この操作は取り消せません。
+</p>
+</div>
+</div>
+<div class="form-actions">
+<button type="submit" class="btn submit"><i class="icon-ok"></i> 実行</button>
+</div>
+</fieldset>
+</form>
+</div>

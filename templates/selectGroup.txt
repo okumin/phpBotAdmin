@@ -1,0 +1,11 @@
+<div id="main">
+<form>
+<legend><div>[head]</div></legend>
+[MESSAGE]
+<div class="list">
+<a href="[URL]?mode=[MODEL]&action=edit" class="btn btn-info create">新規作成</a>
+
+[links]
+</div>
+</form>
+</div>

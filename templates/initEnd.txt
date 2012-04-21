@@ -1,0 +1,18 @@
+<div id="main">
+<form method="get" action="[URL]" class="form-horizontal">
+<fieldset>
+<legend><div>初期設定終了</div></legend>
+<div class="control-group">
+<div class="controls">
+<p class="help-block">
+これで初期設定は終了です。<br>
+あとはbotに命令しまくってください。<br>
+</p>
+</div>
+</div>
+<div class="form-actions">
+<button type="submit" class="btn submit"><i class="icon-ok-sign"></i> OK!</button>
+</div>
+</fieldset>
+</form>
+</div>
