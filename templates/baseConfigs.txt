@@ -28,6 +28,7 @@
 
 <div class="form-actions">
 <button type="submit" class="btn submit"><i class="icon-upload"></i> 送信</button>
+<input type="hidden" name="check" value="1">
 </div>
 </fieldset>
 </form>
