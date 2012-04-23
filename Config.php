@@ -87,7 +87,6 @@ class Config
 		$configs = self::$dataMethods->getMethods()->read('baseConfigs');
 		$configs = $configs[0];
 		
-		self::$baseConfigs[DataMethods::COUNT_COL] = (isset($configs[DataMethods::COUNT_COL]) && ctype_digit($configs[DataMethods::COUNT_COL])) ? $configs[DataMethods::COUNT_COL] : '50';
 		self::$baseConfigs[DataMethods::AUTO_FOLLOW_COL] = (isset($configs[DataMethods::AUTO_FOLLOW_COL]) && $configs[DataMethods::AUTO_FOLLOW_COL] === '1') ? '1' : '';
 		self::$baseConfigs[DataMethods::CUT_COL] = (isset($configs[DataMethods::CUT_COL]) && $configs[DataMethods::AUTO_FOLLOW_COL] === '1') ? '1' : '';
 	}

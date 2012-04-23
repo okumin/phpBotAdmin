@@ -111,14 +111,14 @@ class ExecBot
 	
 	// TL反応の情報をセット
 	private function setHomeReactions($ids){
-		$TL = $this->twitterMethods->getHome_timeline($this->baseConfigs[DataMethods::COUNT_COL], $this->sinceId[0]);
+		$TL = $this->twitterMethods->getHome_timeline('100', $this->sinceId[0]);
 		$patterns = $this->getPatterns($ids);
 		$this->setReactions($patterns, $TL);
 	}
 		
 	// メンション反応の情報をセット
 	private function setMentionReactions($ids){
-		$TL = $this->twitterMethods->getMentions($this->baseConfigs[DataMethods::COUNT_COL], $this->sinceId[0]);
+		$TL = $this->twitterMethods->getMentions('100', $this->sinceId[0]);
 		$patterns = $this->getPatterns($ids);
 		$this->setReactions($patterns, $TL);
 	}
