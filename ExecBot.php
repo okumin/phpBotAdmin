@@ -56,7 +56,6 @@ class ExecBot
 	private function checkOAuth(){
 		$result = $this->twitterMethods->getAccountVerify_credentials();
 		if(isset($result->error)){
-			$this->reportError(__METHOD__, $result->error);
 			throw new Exception('APIエラー: ' . $result->error);
 		}
 		$this->myId = $result->id_str;
@@ -301,13 +300,6 @@ class ExecBot
 		$ids = array_diff($followers, $friends, $exceptions);
 		foreach($ids as $value){
 			$this->twitterMethods->postFriendshipsCreate($value);
-		}
-	}
-	
-	// エラー報告
-	private function reportError($methodname, $result){
-		if(isset($result->error)){
-			Utils::reportError(time(), $methodname, $result->error);
 		}
 	}
 }
