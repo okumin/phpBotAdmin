@@ -64,7 +64,7 @@ class ApiMode extends ModeBase
 			foreach($users as $value){
 				$this->twitterMethods->postFriendshipsDestroy($value);
 			}
-			$this->replace['SAFE_MESSAGE'] = '<div class="alert alert-success">フォローユーザーを整理しました。</div>';
+			$this->replace['SAFE_MESSAGE'] = '<div class="control-group" style="margin-top:5px;margin-bottom:5px;"><div class="message alert alert-success">フォローユーザーを整理しました。</div></div>';
 		}catch(PostNullException $e_post){
 			$this->replace['SAFE_MESSAGE'] = '';
 		}catch(Exception $e){
